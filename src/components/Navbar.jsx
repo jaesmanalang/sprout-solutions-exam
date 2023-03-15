@@ -2,7 +2,7 @@ import Logo from './Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { navLinks } from '../data/constants';
+import { navLinks } from '../utils/constants';
 
 const Navbar = () => {
   return (

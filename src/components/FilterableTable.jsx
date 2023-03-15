@@ -6,7 +6,7 @@ import {
   faMobile,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { tableData } from '../data/constants';
+import { tableData } from '../utils/constants';
 import Table from './Table';
 
 const FilterableTable = () => {
@@ -31,7 +31,7 @@ const FilterableTable = () => {
           <div className="grow relative w-1/2">
             <select
               name="filter by"
-              className="w-full grow py-2 px-3 border border-neutral-500 rounded appearance-none"
+              className="w-full py-2 pl-3 pr-6 border border-neutral-500 rounded appearance-none"
             >
               <option value="">Filter by</option>
             </select>

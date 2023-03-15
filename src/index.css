@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .outlined-input {
+    @apply border border-neutral-500 rounded;
+  }
+}
