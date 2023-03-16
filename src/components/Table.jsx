@@ -45,7 +45,7 @@ const Table = ({ columns, data, pagination = true }) => {
                             <span className="flex flex-col items-start">
                               <span>{formatDate(row[key])}</span>
                               {key !== 'dateCreated' && (
-                                <span className="text-neutral-500">
+                                <span className="text-neutral-400">
                                   {formatTime(row[key])}
                                 </span>
                               )}
