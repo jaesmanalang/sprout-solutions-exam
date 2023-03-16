@@ -31,7 +31,7 @@ const Table = ({ columns, data, pagination = true }) => {
                       key={key}
                     >
                       {key === 'sentThrough' && row[key] ? (
-                        <span className="inline-flex gap-3 w-52 max-w-[175px] whitespace-nowrap overflow-ellipsis overflow-hidden">
+                        <span className="inline-flex gap-3 md:w-[175px] w-[120px] whitespace-nowrap overflow-ellipsis overflow-hidden">
                           {row[key].includes('post') && (
                             <FontAwesomeIcon icon={faBookmark} />
                           )}
@@ -40,7 +40,7 @@ const Table = ({ columns, data, pagination = true }) => {
                           )}
                         </span>
                       ) : (
-                        <span className="inline-block w-52 max-w-[175px] whitespace-nowrap overflow-ellipsis overflow-hidden">
+                        <span className="inline-block md:w-[175px] w-[120px] whitespace-nowrap overflow-ellipsis overflow-hidden">
                           {typeof row[key] === 'object' ? (
                             <span className="flex flex-col items-start">
                               <span>{formatDate(row[key])}</span>

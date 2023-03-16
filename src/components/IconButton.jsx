@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import clsx from 'clsx';
 
-const IconButton = ({ icon, onClick, ...restProps }) => {
+const IconButton = ({ size, icon, onClick, className, ...restProps }) => {
+  const buttonClassName = clsx(
+    'py-0.5 px-2 rounded',
+    className ? className : ''
+  );
   return (
-    <button
-      className="py-0.5 px-2 rounded hover:bg-neutral-100"
-      onClick={onClick}
-      {...restProps}
-    >
-      <FontAwesomeIcon icon={icon} />
+    <button className={buttonClassName} onClick={onClick} {...restProps}>
+      <FontAwesomeIcon icon={icon} size={size} />
     </button>
   );
 };

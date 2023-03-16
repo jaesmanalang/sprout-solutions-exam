@@ -10,7 +10,7 @@ import {
 
 const Pagination = ({ pageCount = 10, currentPage = 1, onPageChange }) => {
   return (
-    <div className="flex items-center justify-between px-3 py-4 border-t border-neutral-400 text-sm  text-emerald-800">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-3 px-3 py-4 border-t border-neutral-400 text-sm  text-emerald-800">
       <div className="flex items-center gap-2">
         <span className="font-medium">Items per page</span>
         <div className="relative">
@@ -26,7 +26,7 @@ const Pagination = ({ pageCount = 10, currentPage = 1, onPageChange }) => {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center space-x-8">
+      <div className="flex items-center justify-center md:gap-8 gap-3">
         <IconButton icon={faBackwardStep} />
         <IconButton icon={faCaretLeft} />
         <span className="font-medium">

@@ -22,13 +22,13 @@ const FilterableTable = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-col sm:flex-row gap-2 items-center justify-between mb-4">
         <div>
           <FilterButton title="All" value={10} active />
           <FilterButton variant="secondary" title="Drafts" value={10} />
         </div>
-        <div className="w-1/2 flex items-center gap-4">
-          <div className="grow relative w-1/2">
+        <div className="sm:w-1/2 w-full flex flex-col sm:flex-row items-center gap-4">
+          <div className="grow relative sm:w-1/2 w-full">
             <select
               name="filter by"
               className="w-full py-2 pl-3 pr-6 border border-neutral-500 rounded appearance-none"
@@ -40,7 +40,7 @@ const FilterableTable = () => {
               className="absolute right-3 top-1/2 -translate-y-1/2"
             />
           </div>
-          <div className="grow relative w-1/2">
+          <div className="grow relative sm:w-1/2 w-full">
             <input
               className="w-full py-2 px-3 border border-neutral-500 rounded"
               type="text"

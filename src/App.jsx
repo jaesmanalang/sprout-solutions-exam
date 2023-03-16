@@ -10,7 +10,7 @@ const App = () => {
       <Navbar />
       <main className="py-8">
         <div className="container">
-          <div className="flex items-center justify-between mb-5">
+          <div className="flex flex-col md:flex-row md:items-center gap-2 justify-between md:mb-5 mb-10">
             <div>
               <h1 className="text-lg font-bold">Announcements</h1>
               <p>

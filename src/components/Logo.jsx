@@ -2,11 +2,15 @@ import logoSrc from '../assets/sprout-solutions-logo.png';
 
 const Logo = ({ children }) => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center flex-shrink">
       <div>
-        <img className="h-10 mr-2" src={logoSrc} alt="Sprout Solutions" />
+        <img
+          className="md:h-10 h-7 mr-2"
+          src={logoSrc}
+          alt="Sprout Solutions"
+        />
       </div>
-      <div className="text-3xl border-l border-neutral-600 leading-none px-2 text-inherit font-extralight">
+      <div className="md:text-3xl text-xl border-l border-neutral-600 leading-none px-2 text-inherit font-extralight">
         {children}
       </div>
     </div>
